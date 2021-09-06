@@ -1,0 +1,171 @@
+
+:root{
+  --Card: #252b41;
+  --backg: #1d2029;
+}
+
+body{
+  background-color: var(--backg);
+}
+
+.App {
+  text-align: center;
+}
+
+h4{
+  margin-bottom: 10px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header{
+  width: 100%;
+  height: 80px;
+  background-color: var(--Card);
+  display:flex;
+  padding:5px;
+  justify-content:space-between;
+}
+
+.logo{
+  height: 70px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.inpute{
+  margin-right: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.inpute-input{
+  width: 150px;
+  height: 20px;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  outline: none;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 0;
+}
+.inpute-button{
+  height: 25px;
+  margin: 0;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 0;
+  background-color: var(--backg);
+  color: white;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.inpute-button:hover{
+  background-color: rgb(87, 111, 245);
+}
+
+.App-main {
+  background-color: var(--backg);
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.card{
+  background-color: var(--Card);
+  border: 1px solid black;
+  margin: 20px;
+  flex-basis: 30%;
+  height: 700px;
+  min-width: 210px;
+}
+
+.imagem-product{
+  width: 70%;
+  height: 50%
+}
+
+.Adicionar{
+  width: 80%;
+  height: 30px;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+footer{
+  background-color: var(--backg);
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#card{
+  background-color: var(--Card);
+  border: 1px solid black;
+  margin: 20px;
+  flex-basis: 30%;
+  height: 700px;
+}
+
+#imagem-product{
+  width: 70%;
+  height: 50%
+}
+
+.carrinho{
+  color: white;
+}
+
+.btn-voltar{
+  position: absolute;
+  top: 100px;
+  left: 5%;
+  background-color: var(--Card);
+  color: white;
+  width: 70px;
+  height: 25px;
+  border: 2px solid white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+
+
+@media(max-width: 768px){
+  .card{
+    flex-basis: 42%;
+    margin: 10px;
+  }
+  input{
+    width: 100px
+  }
+  .inpute-button{
+    width: 80px;
+  }
+}
+
+@media (max-width: 630px) {
+  .card{
+    flex-basis: 42%;
+    margin: 10px;
+    height: 500px;
+  }
+}
